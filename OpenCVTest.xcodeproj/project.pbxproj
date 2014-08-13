@@ -19,6 +19,34 @@
 		D64AC4281961D64E0042C0A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64AC4101961D64E0042C0A3 /* UIKit.framework */; };
 		D64AC4301961D64E0042C0A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D64AC42E1961D64E0042C0A3 /* InfoPlist.strings */; };
 		D64AC4321961D64E0042C0A3 /* OpenCVTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D64AC4311961D64E0042C0A3 /* OpenCVTestTests.m */; };
+		D64AC43C1961D7B50042C0A3 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64AC43B1961D7B50042C0A3 /* opencv2.framework */; };
+		D64AC43F1961D8F40042C0A3 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D64AC43E1961D8F40042C0A3 /* MainViewController.mm */; };
+		D64AC4411961DD040042C0A3 /* check.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4401961DD040042C0A3 /* check.jpg */; };
+		D64AC446196318510042C0A3 /* check4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC442196318510042C0A3 /* check4.jpg */; };
+		D64AC447196318510042C0A3 /* check3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC443196318510042C0A3 /* check3.jpg */; };
+		D64AC448196318510042C0A3 /* check2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D64AC444196318510042C0A3 /* check2.JPG */; };
+		D64AC449196318510042C0A3 /* check1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC445196318510042C0A3 /* check1.jpg */; };
+		D64AC45B1963267C0042C0A3 /* check5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC44B1963267C0042C0A3 /* check5.jpg */; };
+		D64AC45C1963267C0042C0A3 /* check6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC44C1963267C0042C0A3 /* check6.jpg */; };
+		D64AC45D1963267C0042C0A3 /* check7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC44D1963267C0042C0A3 /* check7.jpg */; };
+		D64AC45E1963267C0042C0A3 /* check8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC44E1963267C0042C0A3 /* check8.jpg */; };
+		D64AC45F1963267C0042C0A3 /* check9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC44F1963267C0042C0A3 /* check9.jpg */; };
+		D64AC4601963267C0042C0A3 /* check10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4501963267C0042C0A3 /* check10.jpg */; };
+		D64AC4611963267C0042C0A3 /* check11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4511963267C0042C0A3 /* check11.jpg */; };
+		D64AC4621963267C0042C0A3 /* check12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4521963267C0042C0A3 /* check12.jpg */; };
+		D64AC4631963267C0042C0A3 /* check13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4531963267C0042C0A3 /* check13.jpg */; };
+		D64AC4641963267C0042C0A3 /* check14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4541963267C0042C0A3 /* check14.jpg */; };
+		D64AC4651963267C0042C0A3 /* check15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4551963267C0042C0A3 /* check15.jpg */; };
+		D64AC4661963267C0042C0A3 /* check16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4561963267C0042C0A3 /* check16.jpg */; };
+		D64AC4671963267C0042C0A3 /* check17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4571963267C0042C0A3 /* check17.jpg */; };
+		D64AC4681963267C0042C0A3 /* check18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4581963267C0042C0A3 /* check18.jpg */; };
+		D64AC4691963267C0042C0A3 /* check19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC4591963267C0042C0A3 /* check19.jpg */; };
+		D64AC46A1963267C0042C0A3 /* check20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64AC45A1963267C0042C0A3 /* check20.jpg */; };
+		D64AC46C1965F16D0042C0A3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64AC46B1965F16D0042C0A3 /* MainViewController.xib */; };
+		D64AC46E1965F3D80042C0A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64AC46D1965F3D80042C0A3 /* AVFoundation.framework */; };
+		D6D0B8E1197EC7B1005B5CC7 /* Skewed_Check.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6D0B8DE197EC7B1005B5CC7 /* Skewed_Check.jpg */; };
+		D6D0B8E2197EC7B1005B5CC7 /* Warped_Check1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6D0B8DF197EC7B1005B5CC7 /* Warped_Check1.jpg */; };
+		D6D0B8E3197EC7B1005B5CC7 /* Warped_Check2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6D0B8E0197EC7B1005B5CC7 /* Warped_Check2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +76,35 @@
 		D64AC42D1961D64E0042C0A3 /* OpenCVTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenCVTestTests-Info.plist"; sourceTree = "<group>"; };
 		D64AC42F1961D64E0042C0A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D64AC4311961D64E0042C0A3 /* OpenCVTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVTestTests.m; sourceTree = "<group>"; };
+		D64AC43B1961D7B50042C0A3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
+		D64AC43D1961D8F40042C0A3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D64AC43E1961D8F40042C0A3 /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
+		D64AC4401961DD040042C0A3 /* check.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check.jpg; path = ../../../../Pictures/check.jpg; sourceTree = "<group>"; };
+		D64AC442196318510042C0A3 /* check4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check4.jpg; path = ../../../../Pictures/check4.jpg; sourceTree = "<group>"; };
+		D64AC443196318510042C0A3 /* check3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check3.jpg; path = ../../../../Pictures/check3.jpg; sourceTree = "<group>"; };
+		D64AC444196318510042C0A3 /* check2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check2.JPG; path = ../../../../Pictures/check2.JPG; sourceTree = "<group>"; };
+		D64AC445196318510042C0A3 /* check1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check1.jpg; path = ../../../../Pictures/check1.jpg; sourceTree = "<group>"; };
+		D64AC44B1963267C0042C0A3 /* check5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check5.jpg; path = ../../../../Downloads/2014_07_01/check5.jpg; sourceTree = "<group>"; };
+		D64AC44C1963267C0042C0A3 /* check6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check6.jpg; path = ../../../../Downloads/2014_07_01/check6.jpg; sourceTree = "<group>"; };
+		D64AC44D1963267C0042C0A3 /* check7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check7.jpg; path = ../../../../Downloads/2014_07_01/check7.jpg; sourceTree = "<group>"; };
+		D64AC44E1963267C0042C0A3 /* check8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check8.jpg; path = ../../../../Downloads/2014_07_01/check8.jpg; sourceTree = "<group>"; };
+		D64AC44F1963267C0042C0A3 /* check9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check9.jpg; path = ../../../../Downloads/2014_07_01/check9.jpg; sourceTree = "<group>"; };
+		D64AC4501963267C0042C0A3 /* check10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check10.jpg; path = ../../../../Downloads/2014_07_01/check10.jpg; sourceTree = "<group>"; };
+		D64AC4511963267C0042C0A3 /* check11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check11.jpg; path = ../../../../Downloads/2014_07_01/check11.jpg; sourceTree = "<group>"; };
+		D64AC4521963267C0042C0A3 /* check12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check12.jpg; path = ../../../../Downloads/2014_07_01/check12.jpg; sourceTree = "<group>"; };
+		D64AC4531963267C0042C0A3 /* check13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check13.jpg; path = ../../../../Downloads/2014_07_01/check13.jpg; sourceTree = "<group>"; };
+		D64AC4541963267C0042C0A3 /* check14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check14.jpg; path = ../../../../Downloads/2014_07_01/check14.jpg; sourceTree = "<group>"; };
+		D64AC4551963267C0042C0A3 /* check15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check15.jpg; path = ../../../../Downloads/2014_07_01/check15.jpg; sourceTree = "<group>"; };
+		D64AC4561963267C0042C0A3 /* check16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check16.jpg; path = ../../../../Downloads/2014_07_01/check16.jpg; sourceTree = "<group>"; };
+		D64AC4571963267C0042C0A3 /* check17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check17.jpg; path = ../../../../Downloads/2014_07_01/check17.jpg; sourceTree = "<group>"; };
+		D64AC4581963267C0042C0A3 /* check18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check18.jpg; path = ../../../../Downloads/2014_07_01/check18.jpg; sourceTree = "<group>"; };
+		D64AC4591963267C0042C0A3 /* check19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check19.jpg; path = ../../../../Downloads/2014_07_01/check19.jpg; sourceTree = "<group>"; };
+		D64AC45A1963267C0042C0A3 /* check20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = check20.jpg; path = ../../../../Downloads/2014_07_01/check20.jpg; sourceTree = "<group>"; };
+		D64AC46B1965F16D0042C0A3 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D64AC46D1965F3D80042C0A3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D6D0B8DE197EC7B1005B5CC7 /* Skewed_Check.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Skewed_Check.jpg; path = ../../../../Downloads/fwdjustfyiweareofficialthankyou/Skewed_Check.jpg; sourceTree = "<group>"; };
+		D6D0B8DF197EC7B1005B5CC7 /* Warped_Check1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Warped_Check1.jpg; path = ../../../../Downloads/fwdjustfyiweareofficialthankyou/Warped_Check1.jpg; sourceTree = "<group>"; };
+		D6D0B8E0197EC7B1005B5CC7 /* Warped_Check2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Warped_Check2.jpg; path = ../../../../Downloads/fwdjustfyiweareofficialthankyou/Warped_Check2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64AC46E1965F3D80042C0A3 /* AVFoundation.framework in Frameworks */,
+				D64AC43C1961D7B50042C0A3 /* opencv2.framework in Frameworks */,
 				D64AC40F1961D64E0042C0A3 /* CoreGraphics.framework in Frameworks */,
 				D64AC4111961D64E0042C0A3 /* UIKit.framework in Frameworks */,
 				D64AC40D1961D64E0042C0A3 /* Foundation.framework in Frameworks */,
@@ -96,6 +155,8 @@
 		D64AC40B1961D64E0042C0A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D64AC46D1965F3D80042C0A3 /* AVFoundation.framework */,
+				D64AC43B1961D7B50042C0A3 /* opencv2.framework */,
 				D64AC40C1961D64E0042C0A3 /* Foundation.framework */,
 				D64AC40E1961D64E0042C0A3 /* CoreGraphics.framework */,
 				D64AC4101961D64E0042C0A3 /* UIKit.framework */,
@@ -111,6 +172,9 @@
 				D64AC41C1961D64E0042C0A3 /* AppDelegate.m */,
 				D64AC41E1961D64E0042C0A3 /* Images.xcassets */,
 				D64AC4131961D64E0042C0A3 /* Supporting Files */,
+				D64AC43D1961D8F40042C0A3 /* MainViewController.h */,
+				D64AC43E1961D8F40042C0A3 /* MainViewController.mm */,
+				D64AC46B1965F16D0042C0A3 /* MainViewController.xib */,
 			);
 			path = OpenCVTest;
 			sourceTree = "<group>";
@@ -118,6 +182,7 @@
 		D64AC4131961D64E0042C0A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D64AC44A1963254B0042C0A3 /* images */,
 				D64AC4141961D64E0042C0A3 /* OpenCVTest-Info.plist */,
 				D64AC4151961D64E0042C0A3 /* InfoPlist.strings */,
 				D64AC4181961D64E0042C0A3 /* main.m */,
@@ -142,6 +207,37 @@
 				D64AC42E1961D64E0042C0A3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D64AC44A1963254B0042C0A3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D6D0B8DE197EC7B1005B5CC7 /* Skewed_Check.jpg */,
+				D6D0B8DF197EC7B1005B5CC7 /* Warped_Check1.jpg */,
+				D6D0B8E0197EC7B1005B5CC7 /* Warped_Check2.jpg */,
+				D64AC44B1963267C0042C0A3 /* check5.jpg */,
+				D64AC44C1963267C0042C0A3 /* check6.jpg */,
+				D64AC44D1963267C0042C0A3 /* check7.jpg */,
+				D64AC44E1963267C0042C0A3 /* check8.jpg */,
+				D64AC44F1963267C0042C0A3 /* check9.jpg */,
+				D64AC4501963267C0042C0A3 /* check10.jpg */,
+				D64AC4511963267C0042C0A3 /* check11.jpg */,
+				D64AC4521963267C0042C0A3 /* check12.jpg */,
+				D64AC4531963267C0042C0A3 /* check13.jpg */,
+				D64AC4541963267C0042C0A3 /* check14.jpg */,
+				D64AC4551963267C0042C0A3 /* check15.jpg */,
+				D64AC4561963267C0042C0A3 /* check16.jpg */,
+				D64AC4571963267C0042C0A3 /* check17.jpg */,
+				D64AC4581963267C0042C0A3 /* check18.jpg */,
+				D64AC4591963267C0042C0A3 /* check19.jpg */,
+				D64AC45A1963267C0042C0A3 /* check20.jpg */,
+				D64AC442196318510042C0A3 /* check4.jpg */,
+				D64AC443196318510042C0A3 /* check3.jpg */,
+				D64AC444196318510042C0A3 /* check2.JPG */,
+				D64AC445196318510042C0A3 /* check1.jpg */,
+				D64AC4401961DD040042C0A3 /* check.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +315,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64AC45F1963267C0042C0A3 /* check9.jpg in Resources */,
+				D64AC4661963267C0042C0A3 /* check16.jpg in Resources */,
+				D64AC45D1963267C0042C0A3 /* check7.jpg in Resources */,
+				D64AC4611963267C0042C0A3 /* check11.jpg in Resources */,
+				D64AC4671963267C0042C0A3 /* check17.jpg in Resources */,
+				D64AC45C1963267C0042C0A3 /* check6.jpg in Resources */,
+				D64AC447196318510042C0A3 /* check3.jpg in Resources */,
+				D6D0B8E2197EC7B1005B5CC7 /* Warped_Check1.jpg in Resources */,
+				D64AC4601963267C0042C0A3 /* check10.jpg in Resources */,
+				D64AC4691963267C0042C0A3 /* check19.jpg in Resources */,
+				D64AC4651963267C0042C0A3 /* check15.jpg in Resources */,
+				D64AC4681963267C0042C0A3 /* check18.jpg in Resources */,
+				D6D0B8E3197EC7B1005B5CC7 /* Warped_Check2.jpg in Resources */,
+				D6D0B8E1197EC7B1005B5CC7 /* Skewed_Check.jpg in Resources */,
+				D64AC4411961DD040042C0A3 /* check.jpg in Resources */,
 				D64AC4171961D64E0042C0A3 /* InfoPlist.strings in Resources */,
+				D64AC46A1963267C0042C0A3 /* check20.jpg in Resources */,
+				D64AC449196318510042C0A3 /* check1.jpg in Resources */,
+				D64AC4621963267C0042C0A3 /* check12.jpg in Resources */,
+				D64AC45B1963267C0042C0A3 /* check5.jpg in Resources */,
+				D64AC45E1963267C0042C0A3 /* check8.jpg in Resources */,
+				D64AC4631963267C0042C0A3 /* check13.jpg in Resources */,
+				D64AC46C1965F16D0042C0A3 /* MainViewController.xib in Resources */,
+				D64AC4641963267C0042C0A3 /* check14.jpg in Resources */,
+				D64AC448196318510042C0A3 /* check2.JPG in Resources */,
 				D64AC41F1961D64E0042C0A3 /* Images.xcassets in Resources */,
+				D64AC446196318510042C0A3 /* check4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64AC41D1961D64E0042C0A3 /* AppDelegate.m in Sources */,
+				D64AC43F1961D8F40042C0A3 /* MainViewController.mm in Sources */,
 				D64AC4191961D64E0042C0A3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,10 +479,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ayokamac129/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVTest/OpenCVTest-Prefix.pch";
 				INFOPLIST_FILE = "OpenCVTest/OpenCVTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +498,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ayokamac129/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVTest/OpenCVTest-Prefix.pch";
 				INFOPLIST_FILE = "OpenCVTest/OpenCVTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -437,6 +571,7 @@
 				D64AC4371961D64E0042C0A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D64AC4381961D64E0042C0A3 /* Build configuration list for PBXNativeTarget "OpenCVTestTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +580,7 @@
 				D64AC43A1961D64E0042C0A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
