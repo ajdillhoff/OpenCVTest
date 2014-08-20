@@ -166,6 +166,50 @@ int detectRectangle(std::vector<cv::Vec4f> P, std::vector<cv::Vec2f> H, cv::Mat&
   return result;
 }
 
+int cvImageProcess(cv::Mat& image, int threshold) {
+  double dilation_size = 3.0;
+  int width = image.size().width;
+  int height = image.size().height;
+  
+  cv::Mat grayMat = image.clone();
+  
+  cv::Mat element = getStructuringElement( 0,
+                                          cv::Size( 2*dilation_size + 1, 2*dilation_size + 1 ),
+                                          cv::Point( dilation_size, dilation_size ) );
+  
+  cv::threshold(grayMat, grayMat, threshold, 255.0, 0);
+  
+  // Dilate to remove unconnected dark spots
+  cv::dilate(grayMat, grayMat, element);
+  
+  float t1 = 20.0;
+  cv::Canny(grayMat, grayMat,
+            t1,
+            2*t1);
+  
+  // Hough Transform to detect the lines
+  std::vector<cv::Vec2f> lines;
+  
+  // We cannot get the exact accumulator count, but having this threshold will
+  // satisfy the third condition of our test
+  int hough_threshold = 100;
+  cv::HoughLines(grayMat, lines, 1, CV_PI/180, hough_threshold);
+  
+  // Convert these lines
+  for (int i = 0; i < lines.size(); i++) {
+    float rho = lines[i][0], theta = lines[i][1];
+    double x0 = cvRound(cos(theta) * rho), y0 = cvRound(sin(theta) * rho);
+    double t_w = width / 2, t_h = height / 2;
+    double delta_x = x0 - t_w, delta_y = y0 - t_h;
+    float rho_m = delta_x * cos(theta) + delta_y * sin(theta);
+    
+    lines[i][0] = rho_m;
+  }
+  
+  return detectRectangle(findExtendedPeaks(lines), lines, grayMat);
+
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -185,9 +229,9 @@ int detectRectangle(std::vector<cv::Vec4f> P, std::vector<cv::Vec2f> H, cv::Mat&
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-  [self initializeCamera];
-//  UIImage *testImage = [UIImage imageNamed:@"check.jpg"];
-//  [self processImage:testImage];
+//  [self initializeCamera];
+  UIImage *testImage = [UIImage imageNamed:@"check.jpg"];
+  [self processImage:testImage];
 }
 
 - (void)didReceiveMemoryWarning
@@ -380,11 +424,10 @@ int detectRectangle(std::vector<cv::Vec4f> P, std::vector<cv::Vec2f> H, cv::Mat&
 
 - (void)processImage:(UIImage *)testImage {
   NSLog(@"Starting sequence");
-  //  UIImage *testImage = [UIImage imageNamed:@"check18.jpg"];
-  double dilation_size = 3.0;
   cv::Mat src = [self cvMatFromUIImage:testImage];
   cv::Mat test;
   cv::Mat grayMat;
+  int result = 0;
   
   double width = _imageView.frame.size.width;
   double width_ratio = src.size().width / width;
@@ -399,48 +442,10 @@ int detectRectangle(std::vector<cv::Vec4f> P, std::vector<cv::Vec2f> H, cv::Mat&
   // blur the image for Canny
   cv::GaussianBlur(grayMat, grayMat, cv::Size(3, 3), 10.0);
   
-  cv::Scalar mean, stdDev;
-  cv::meanStdDev(grayMat, mean, stdDev);
-  
-  NSLog(@"mean: %f, std: %f", mean[0], stdDev[0]);
-  
-  // Apply a threshold
-  cv::Mat element = getStructuringElement( 0,
-                                          cv::Size( 2*dilation_size + 1, 2*dilation_size + 1 ),
-                                          cv::Point( dilation_size, dilation_size ) );
-  
-  // calculate threshold from linear regression results
-  double threshold = 188.360499 + (stdDev[0] * -1.001518);
-  cv::threshold(grayMat, grayMat, threshold, 255.0, 0);
-  
-  // Dilate to remove unconnected dark spots
-  cv::dilate(grayMat, grayMat, element);
-  
-  float t1 = 20.0;
-  cv::Canny(grayMat, grayMat,
-            t1,
-            2*t1);
-  
-  // Hough Transform to detect the lines
-  std::vector<cv::Vec2f> lines;
-  
-  // We cannot get the exact accumulator count, but having this threshold will
-  // satisfy the third condition of our test
-  int hough_threshold = 100;
-  cv::HoughLines(grayMat, lines, 1, CV_PI/180, hough_threshold);
-  
-  // Convert these lines
-  for (int i = 0; i < lines.size(); i++) {
-    float rho = lines[i][0], theta = lines[i][1];
-    double x0 = cvRound(cos(theta) * rho), y0 = cvRound(sin(theta) * rho);
-    double t_w = width / 2, t_h = new_height / 2;
-    double delta_x = x0 - t_w, delta_y = y0 - t_h;
-    float rho_m = delta_x * cos(theta) + delta_y * sin(theta);
-    
-    lines[i][0] = rho_m;
+  for (int i = 32; i < 224; i+=8) {
+    result = cvImageProcess(grayMat, i);
+    if (result) break;
   }
-  
-  int result = detectRectangle(findExtendedPeaks(lines), lines, test);
   
   if (result) {
     [self.outputLabel setText:@"Possible Cheque Found"];
@@ -448,9 +453,6 @@ int detectRectangle(std::vector<cv::Vec4f> P, std::vector<cv::Vec2f> H, cv::Mat&
     [self.outputLabel setText:@"No Cheque Detected"];
   }
   
-  cv::Mat dst = test.clone();
-
-  [_imageView setImage:[self UIImageFromCVMat:test]];
   NSLog(@"Ending sequence");
   
 }
